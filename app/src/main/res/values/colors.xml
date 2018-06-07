@@ -3,4 +3,13 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="snow4">#8b8989</color>
+    <color name="peachpuff">#8b7765</color>
+    <color name="honeydew">#c1cdc1</color>
+    <color name="darkslategray">#2f4f4f</color>
+    <color name="darkturquiose">#00ced1</color>
+    <color name="khaki">#f0e68c</color>
+    <color name="lightcyan">#5f9ea0</color>
+    <color name="gold">#ffd700</color>
+
 </resources>

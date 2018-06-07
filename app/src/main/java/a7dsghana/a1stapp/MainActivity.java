@@ -11,10 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void onClick(View v) {
-        //call window2
-        setContentView(R.layout.activity_login);
-    }
+
 }
 
 

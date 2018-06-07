@@ -1,73 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="81dp">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="102dp"
-        android:layout_height="32dp"
-        android:layout_marginBottom="192dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:contentDescription="@android:string/VideoView_error_title"
-        android:text="@string/welcome"
-        android:textColor="@android:color/black"
-        android:textSize="24sp"
-        android:typeface="monospace"
-        app:fontFamily="sans-serif-condensed"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button5"
-        app:layout_constraintStart_toStartOf="@+id/button4" />
+    android:orientation="vertical" >
+    <EditText
+        android:background="@drawable/curvy_edittext"
+        android:layout_marginTop="10dp"
+        android:padding="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Name"
+        />
+    <EditText
+        android:background="@drawable/curvy_edittext"
+        android:layout_marginTop="10dp"
+        android:padding="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Email"
+        android:inputType="textEmailAddress"
+        />
+    <EditText
+        android:background="@drawable/curvy_edittext"
+        android:layout_marginTop="10dp"
+        android:padding="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Name"
+        />
+    <EditText
+        android:background="@drawable/curvy_edittext"
+        android:layout_marginTop="10dp"
+        android:padding="18dp"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add Phone Number"
+        />
+    <EditText
+        android:background="@drawable/curvy_edittext"
+        android:layout_marginTop="10dp"
+        android:padding="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add House Number"
+        />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="128dp"
-        android:layout_height="65dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/proceed"
-        android:textColor="@android:color/holo_green_dark"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42" />
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/curvy_button"
+        android:text="Select High School Level"
+        android:textColor="#fff" />
     <Button
-        android:id="@+id/button5"
-        android:layout_width="129dp"
-        android:layout_height="65dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:text="@string/exit"
-        android:textColor="@android:color/holo_red_dark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.874"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button4" />
-
-    <android.support.v7.widget.CardView
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:background="@drawable/curvy_button"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <android.support.v7.widget.RecyclerView
+        android:layout_height="wrap_content"
+        android:text="Select High School Level"
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Physical Location*"
+            android:textColor="#000"
+            />
+        <Button
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:background="@drawable/curvy_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="GPS"
+            />
+    </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textColor="@color/peachpuff"
+            android:background="@drawable/curvy_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            />
+        <Button
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/gold"
+            android:background="@drawable/curvy_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+

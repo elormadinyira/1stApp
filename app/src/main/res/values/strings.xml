@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">1stApp</string>
+    <string name="Welcome">Welcome</string>
+    <string name="ElormAdinyira">Elorm Adinyira</string>
+    <string name="SchoolName">School Name</string>
+    <string name="District">District</string>
+    <string name="Region">Region</string>
+    <string name="HeadMaster">HeadMaster</string>
+    <string name="DayBoarding">Day/Boarding</string>
+
     <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to login -->
